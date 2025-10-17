@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Carson - Um aplicativo para descarte de medicamentos</string>
+
+    <string name="sexo_prompt">Selecione o gênero</string>
+
+    <string-array name="languages_array">
+        <item>Português - BR</item>
+        <item>English - US</item>
+        <item>Español - ES</item>
+    </string-array>
+</resources>

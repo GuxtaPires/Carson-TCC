@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2FFF2"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="164dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_logo" />
+
+    <!-- Título de boas-vindas -->
+<TextView
+android:id="@+id/welcomeText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Bem-vindo ao Carson!"
+android:textSize="22sp"
+android:textStyle="bold"
+android:textColor="#000000"
+android:layout_marginBottom="12dp" />
+
+    <!-- Subtítulo -->
+<TextView
+android:id="@+id/subtitleText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Descartar medicamentos nunca foi tão fácil!"
+android:textSize="16sp"
+android:textColor="#4B5563"
+    android:gravity="center"
+    android:layout_marginBottom="40dp" />
+
+    <!-- Botão de ação -->
+<Button
+android:id="@+id/startButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Começar!"
+android:backgroundTint="#16A34A"
+    android:textColor="#FFFFFF"
+    android:textSize="16sp"
+    android:padding="12dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginHorizontal="24dp" />
+
+    </LinearLayout>

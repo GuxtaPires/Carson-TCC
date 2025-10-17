@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFF0"
+    android:fillViewport="true"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Voltar"
+            app:tint="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/imgProfileLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="Logo do Perfil"/>
+
+        <TextView
+            android:id="@+id/txtProfileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="Seu Perfil"
+            android:textColor="#2B7A2B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/FormLabel"
+            android:text="Nome completo" />
+        <EditText
+            android:id="@+id/edtFullName"
+            style="@style/FormEditText"
+            android:inputType="textPersonName"
+            android:text="João da Silva Santos" />
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="Data de nascimento" />
+                <EditText
+                    android:id="@+id/edtBirthDate"
+                    style="@style/FormEditText"
+                    android:inputType="date"
+                    android:text="XX/XX/XXXX" />
+            </LinearLayout>
+            <View style="@style/FormSpacer" />
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="E-mail" />
+                <EditText
+                    android:id="@+id/edtEmail"
+                    style="@style/FormEditText"
+                    android:inputType="textEmailAddress"
+                    android:text="joaozinho@gmail.com" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="Gênero" />
+                <EditText
+                    android:id="@+id/edtGender"
+                    style="@style/FormEditText"
+                    android:inputType="text"
+                    android:text="Escolha" />
+            </LinearLayout>
+            <View style="@style/FormSpacer" />
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="CPF" />
+                <EditText
+                    android:id="@+id/edtCpf"
+                    style="@style/FormEditText"
+                    android:inputType="number"
+                    android:text="123.456.789-00" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/FormLabel"
+            android:text="Endereço" />
+        <EditText
+            android:id="@+id/edtAddress"
+            style="@style/FormEditText"
+            android:inputType="text"
+            android:text="Rua pedro alvares" />
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="CEP" />
+                <EditText
+                    android:id="@+id/edtCep"
+                    style="@style/FormEditText"
+                    android:inputType="number"
+                    android:text="01234-567" />
+            </LinearLayout>
+            <View style="@style/FormSpacer" />
+            <LinearLayout style="@style/FormColumnSmall">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="Nº" />
+                <EditText
+                    android:id="@+id/edtNumber"
+                    style="@style/FormEditText"
+                    android:inputType="number"
+                    android:text="123" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="Cidade" />
+                <EditText
+                    android:id="@+id/edtCity"
+                    style="@style/FormEditText"
+                    android:inputType="text"
+                    android:text="São Paulo" />
+            </LinearLayout>
+            <View style="@style/FormSpacer" />
+            <LinearLayout style="@style/FormColumnSmall">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="UF" />
+                <EditText
+                    android:id="@+id/edtState"
+                    style="@style/FormEditText"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="2"
+                    android:text="SP" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="Bairro" />
+                <EditText
+                    android:id="@+id/edtNeighborhood"
+                    style="@style/FormEditText"
+                    android:inputType="text"
+                    android:text="Jardim Pinheiros" />
+            </LinearLayout>
+            <View style="@style/FormSpacer" />
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="Complemento" />
+                <EditText
+                    android:id="@+id/edtComplement"
+                    style="@style/FormEditText"
+                    android:inputType="text"
+                    android:text="Apto. 123 A" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="Senha" />
+                <EditText
+                    android:id="@+id/edtPassword"
+                    style="@style/FormEditText"
+                    android:inputType="textPassword"
+                    android:text="***********" />
+            </LinearLayout>
+            <View style="@style/FormSpacer" />
+            <LinearLayout style="@style/FormColumn">
+                <TextView
+                    style="@style/FormLabel"
+                    android:text="Confirme sua senha" />
+                <EditText
+                    android:id="@+id/edtConfirmPassword"
+                    style="@style/FormEditText"
+                    android:inputType="textPassword"
+                    android:text="***********" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#49BA63"
+            android:text="Atualizar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
