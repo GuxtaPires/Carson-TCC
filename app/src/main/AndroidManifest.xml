@@ -2,7 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,32 +21,19 @@
         android:theme="@style/Theme.CarsonUmAplicativoParaDescarteDeMedicamentos"
         tools:targetApi="31">
         <activity
-            android:name=".activity_notifications"
+            android:name=".newsActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_educacional"
+            android:name=".item_notificacao"
             android:exported="false" />
-        <activity
-            android:name=".acticity_listar_medicamentos"
-            android:exported="false" />
-        <activity
-            android:name=".Acticity_settings"
-            android:exported="false" />
-        <activity
-            android:name=".activity_editar_perfil"
-            android:exported="false" />
-        <activity
-            android:name=".activity_cadastro_medicamento"
-            android:exported="false" />
-        <activity
-            android:name=".activity_atualizacoes"
-            android:exported="false" />
-        <activity
-            android:name=".Cadastro_dados_pessoais"
-            android:exported="false" />
-        <activity
-            android:name=".tela_de_login"
-            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDi4pEr0MBVFRWgv4O-7vsxkoYIJHqtnqE" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -48,6 +43,53 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".tela_de_login"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Cadastro_dados_pessoais"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity_recuperar_senha"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_settings"
+            android:exported="false" />
+        <activity
+            android:name=".GuiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicamentosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificacoesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_cadastrar_medicamento"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_moderador_dashboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ActivityChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

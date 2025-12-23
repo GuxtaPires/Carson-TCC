@@ -1,190 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawerLayout"
+    android:id="@+id/mainContent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6FFF6"
-    tools:context=".MapActivity">
+    android:fitsSystemWindows="true"
+    android:background="?android:attr/colorBackground">
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="56dp"
+        android:background="?attr/colorSurface"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/desc_back"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="?attr/colorPrimary" />
+
+        <TextView
+            android:id="@+id/txtLogo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/desc_app_logo"
+            android:src="@drawable/ic_logo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav"
+        android:layout_below="@id/header"
+        android:fillViewport="true"
+        android:padding="20dp">
 
         <LinearLayout
-            android:id="@+id/header"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:background="#FFFFFF"
-            android:elevation="4dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="12dp">
-
-            <ImageButton
-                android:id="@+id/btnMenu"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Menu"
-                android:src="@drawable/ic_profile"
-                app:tint="#2B7A2B" />
-
-            <TextView
-                android:id="@+id/txtLogo"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Carson"
-                android:textColor="#2B7A2B"
-                android:textSize="20sp"
-                android:textStyle="italic" />
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:contentDescription="Logo"
-                android:src="@drawable/ic_logo" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/bottom_nav"
-            android:layout_below="@id/header"
-            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:paddingBottom="80dp">
 
             <TextView
-                android:id="@+id/txtTitle"
+                android:id="@+id/txtTitulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="24dp"
-                android:gravity="center"
-                android:text="Pontos de descarte perto de sua casa!"
-                android:textColor="#333333"
+                android:text="@string/title_register_med"
+                android:textColor="?attr/colorPrimary"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                app:cardCornerRadius="32dp"
-                app:cardElevation="4dp">
-
-                <androidx.fragment.app.FragmentContainerView
-                    android:id="@+id/map"
-                    android:name="com.google.android.gms.maps.SupportMapFragment"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </androidx.cardview.widget.CardView>
-
             <TextView
-                android:id="@+id/lblSelectedAddress"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="Endereço selecionado"
-                android:textColor="#333333"
-                android:textSize="14sp" />
+                android:layout_marginBottom="6dp"
+                android:text="@string/label_med_name"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/txtSelectedAddress"
+            <EditText
+                style="@style/roundedField"
+                android:id="@+id/edtNomeMedicamento"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/edit_text_background_green"
-                android:gravity="center_vertical"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:text="Rua XPTO, 123 - Jardim XYZ"
-                android:textColor="#000000"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/hint_med_name_example"
+                android:padding="12dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurface"
                 android:textSize="16sp" />
-        </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/btnAdd"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="80dp"
-            android:background=""
-            android:contentDescription="Adicionar"
-            android:elevation="6dp"
-            android:src="@drawable/ic_add"
-            app:tint="@color/black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="@string/label_med_validity"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="16sp" />
 
-        <LinearLayout
-            android:id="@+id/bottom_nav"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:layout_alignParentBottom="true"
-            android:background="#FFFFFF"
-            android:elevation="4dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginHorizontal="18dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Local"
-                android:src="@drawable/ic_loc"
-                app:tint="@color/icon_tint_positive" />
-
-            <ImageButton
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginHorizontal="18dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Medicamentos"
-                android:src="@drawable/ic_med"
-                app:tint="@color/icon_tint_positive" />
-
-            <ImageButton
-                android:layout_width="50dp"
+            <EditText
+                android:id="@+id/edtValidade"
+                style="@style/roundedField"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginHorizontal="18dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Home"
-                android:src="@drawable/ic_home"
-                app:tint="@color/icon_tint_positive" />
+                android:layout_marginBottom="16dp"
+                android:hint="@string/hint_expiry_date_format"
+                android:inputType="number"
+                android:maxLength="7"
+                android:padding="12dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/colorOnSurface"
+                android:textSize="16sp" />
 
-            <ImageButton
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginHorizontal="18dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Notícias"
-                android:src="@drawable/ic_news"
-                app:tint="@color/icon_tint_positive" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="@string/label_med_status"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="16sp" />
 
-            <ImageButton
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginHorizontal="18dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Buscar"
-                android:src="@drawable/ic_search"
-                app:tint="@color/icon_tint_positive" />
+            <Spinner
+                android:id="@+id/spinnerSituacao"
+                style="@style/roundedField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="32dp"
+                android:padding="12dp"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/btnSalvarMedicamento"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:text="@string/btn_save_med"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
-    </RelativeLayout>
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navView"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="#C6F4D6"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/menu_lateral" />
-
-</androidx.drawerlayout.widget.DrawerLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.carson_umaplicativoparadescartedemedicamentos" />
+                  <option name="mobileSdkAppId" value="1:556417669606:android:3713db5eede31f67885e27" />
+                  <option name="projectId" value="carsonbd-d17b1" />
+                  <option name="projectNumber" value="556417669606" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

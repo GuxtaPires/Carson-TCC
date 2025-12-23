@@ -1,7 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.CarsonUmAplicativoParaDescarteDeMedicamentos" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <style name="Base.Theme.CarsonUmAplicativoParaDescarteDeMedicamentos"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Dark Mode com paleta de verdes e contraste -->
+        <item name="colorPrimary">@color/carson_verde_claro</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSurface">@color/carson_dark_surface</item> <!-- Cor de Cards, Menus (verde musgo) -->
+        <item name="android:colorBackground">@color/carson_dark_background</item> <!-- Fundo principal (verde escuro) -->
+        <item name="colorOnSurface">@color/carson_dark_on_surface</item>
+        <item name="colorError">#CF6679</item>
+        <item name="colorOnError">@color/black</item>
+
     </style>
+
+    <style name="Theme.CarsonUmAplicativoParaDescarteDeMedicamentos"
+        parent="Base.Theme.CarsonUmAplicativoParaDescarteDeMedicamentos" />
+
 </resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carson</string>
+
+    <string name="welcome_title">¡Bienvenido a Carson!</string>
+    <string name="welcome_subtitle">¡Desechar medicamentos nunca fue tan fácil!</string>
+    <string name="start_button">¡Comenzar!</string>
+
+    <string name="welcome_back">¡Bienvenido de nuevo!</string>
+    <string name="login_subtitle">Inicia sesión para continuar</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button">Entrar</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="no_account">¿No tienes una cuenta?</string>
+    <string name="register_here">Regístrate aquí</string>
+    <string name="chk_remember_me">Recuérdame</string>
+    <string name="loading_logging_in">Iniciando sesión...</string>
+
+    <string name="title_map_points">Puntos de desecho</string>
+    <string name="label_selected_address">Dirección seleccionada</string>
+    <string name="hint_tap_map">Toca un punto en el mapa...</string>
+    <string name="desc_back">Volver</string>
+
+    <string name="title_news_header">Noticias 🗞️</string>
+    <string name="text_last_update_placeholder">Última actualización: --/--/----</string>
+
+    <string name="desc_menu">Menú de perfil</string>
+    <string name="desc_app_logo">Logotipo de la aplicación</string>
+    <string name="desc_nav_map">Mapa</string>
+    <string name="desc_nav_meds">Mis Medicamentos</string>
+    <string name="desc_nav_home">Inicio</string>
+    <string name="desc_nav_news">Noticias</string>
+    <string name="desc_nav_search">Buscar</string>
+
+    <string name="profile">Perfil</string>
+    <string name="settings">Configuración</string>
+    <string name="change_password">Cambiar contraseña</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <string name="sexo_prompt">Seleccione el género</string>
+    <string name="situacao_prompt">Seleccione el estado del medicamento</string>
+
+    <string-array name="situacoes_medicamento">
+        <item>En uso</item>
+        <item>Vencido</item>
+        <item>Para desechar</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="idiomas">
+        <item>Portugués (Brasil)</item>
+        <item>Inglés</item>
+        <item>Español</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+    <string name="titulo_home">Inicio</string>
+    <string name="titulo_medicamentos">Medicamentos</string>
+    <string name="titulo_locais">Puntos de Desecho</string>
+    <string name="titulo_noticias">Noticias</string>
+    <string name="titulo_sair">Salir</string>
+    <string name="titulo_configuracoes_area">Cuenta</string>
+
+    <string name="desc_profile_photo">Foto de perfil del usuario</string>
+    <string name="loading_text">Cargando...</string>
+    <string name="nav_header_email_placeholder">usuario@email.com</string>
+
+    <string name="title_create_account">Crear Cuenta</string>
+    <string name="hint_full_name">Nombre completo</string>
+    <string name="hint_date">DD/MM/AAAA</string>
+    <string name="hint_cpf">DNI / Cédula</string>
+    <string name="hint_zip_code">Código Postal</string>
+    <string name="hint_address">Dirección</string>
+    <string name="hint_number">N.º</string>
+    <string name="hint_city">Ciudad</string>
+    <string name="hint_state">Prov./Estado</string>
+    <string name="hint_neighborhood">Barrio</string>
+    <string name="hint_complement">Depto/Unidad</string>
+    <string name="hint_confirm_password">Confirmar contraseña</string>
+    <string name="btn_register">Registrarse</string>
+
+    <string-array name="generos_array">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+        <item>Prefiero no decirlo</item>
+    </string-array>
+
+    <string name="title_register_med">Registrar Medicamento</string>
+    <string name="label_med_name">Nombre del Medicamento</string>
+    <string name="hint_med_name_example">Ej: Paracetamol</string>
+    <string name="label_med_validity">Caducidad</string>
+    <string name="hint_expiry_date_format">MM/AAAA</string>
+    <string name="label_med_status">Estado</string>
+    <string name="btn_save_med">Guardar Medicamento</string>
+
+    <string name="label_current_password">Contraseña actual</string>
+    <string name="hint_current_password">Ingresa tu contraseña actual</string>
+    <string name="label_new_password">Nueva contraseña</string>
+    <string name="hint_new_password">Ingresa tu nueva contraseña</string>
+    <string name="label_confirm_new_password">Confirmar nueva contraseña</string>
+    <string name="hint_confirm_new_password">Confirma la nueva contraseña</string>
+    <string name="btn_save_password">Guardar nueva contraseña</string>
+
+    <string name="title_educational_guide">Guía educativa</string>
+    <string name="loading_tip">Cargando consejo...</string>
+    <string name="toast_tip_hint">¡Toca el texto para ver otro consejo! 💡</string>
+    <string name="snack_already_on_guide">¡Ya estás en la Guía Educativa! 🎓</string>
+
+    <string-array name="dicas_titulos">
+        <item>🌊 El Ciclo del Agua (y del remedio)</item>
+        <item>🥷 La Técnica de Desecho Ninja</item>
+        <item>🚫 El Juego de los 3 Errores</item>
+        <item>💉 Agujas y Jeringas: ¡Peligro!</item>
+        <item>👶 El Botiquín y los Niños</item>
+        <item>💊 Envase vs. Pastilla</item>
+        <item>🧪 Peligro Químico en el Suelo</item>
+        <item>🔄 Logística Inversa: ¡Es tu derecho!</item>
+        <item>🧴 Líquidos y Jarabes: ¡No al desagüe!</item>
+        <item>🤝 Donación Consciente</item>
+    </string-array>
+
+    <string-array name="dicas_conteudos">
+        <item>🐟 &lt;b&gt;¿Sabías que los peces están siendo medicados?&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Cuando tiras una pastilla al inodoro, el tratamiento de aguas &lt;b&gt;NO&lt;/b&gt; filtra todo. El antibiótico vuelve a los ríos, crea superbacterias e incluso puede volver a tu grifo.&lt;br/&gt;&lt;br/&gt;✅ &lt;b&gt;Solución:&lt;/b&gt; Nunca uses el inodoro como basurero.</item>
+        <item>Sigue el protocolo ninja en 3 pasos:&lt;br/&gt;&lt;br/&gt;📦 &lt;b&gt;1. La Caja:&lt;/b&gt; Cartón y prospecto van al &lt;b&gt;RECICLAJE&lt;/b&gt; (¡rompe tus datos antes!).&lt;br/&gt;💊 &lt;b&gt;2. El Blíster:&lt;/b&gt; El empaque con pastillas va al &lt;b&gt;PUNTO DE RECOLECCIÓN&lt;/b&gt;.&lt;br/&gt;🗺️ &lt;b&gt;3. La Misión:&lt;/b&gt; Abre el mapa de Carson y encuentra el punto más cercano.</item>
+        <item>¿Cometes alguno de estos errores?&lt;br/&gt;&lt;br/&gt;❌ &lt;b&gt;Error 1:&lt;/b&gt; Tirar en la basura de cocina (los lixiviados llevan el veneno al suelo).&lt;br/&gt;❌ &lt;b&gt;Error 2:&lt;/b&gt; Quemar en el patio (el humo puede ser tóxico).&lt;br/&gt;❌ &lt;b&gt;Error 3:&lt;/b&gt; Guardar \'para después\' (medicamento vencido cambia su fórmula química).</item>
+        <item>⚠️ &lt;b&gt;¡Agujas, jeringas y lancetas NO van en la basura común!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Pueden perforar la bolsa de basura e infectar a los recolectores con enfermedades graves.&lt;br/&gt;&lt;br/&gt;✅ &lt;b&gt;Cómo hacerlo:&lt;/b&gt; Guarda dentro de una botella PET o envase de detergente (plástico duro), cierra bien y lleva a una Unidad de Salud.</item>
+        <item>🧸 &lt;b&gt;Parece dulce, pero es veneno.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La principal causa de intoxicación infantil son medicamentos dejados al alcance.&lt;br/&gt;&lt;br/&gt;💡 &lt;b&gt;Consejo Carson:&lt;/b&gt; Haz una limpieza mensual en tu botiquín. Si venció o no usas más, desecha inmediatamente en los puntos de nuestro mapa.</item>
+        <item>♻️ &lt;b&gt;El secreto de la separación:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;¡Muchas personas tiran la caja entera en el punto de recolección. Eso ocupa espacio en vano!&lt;br/&gt;&lt;br/&gt;• &lt;b&gt;Cartón/Papel:&lt;/b&gt; Basurero Azul (Reciclaje de casa).&lt;br/&gt;• &lt;b&gt;Blíster/Vidrio con remedio:&lt;/b&gt; Máquina recolectora (Farmacia).&lt;br/&gt;&lt;i&gt;¡Optimiza el espacio para que quepan los desechos de todos!&lt;/i&gt;</item>
+        <item>🌱 &lt;b&gt;¿Comerías un tomate con analgésico?&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Remedios en la basura común van a vertederos. Allí, se disuelven y penetran en la tierra, contaminando las aguas subterráneas y los cultivos alrededor.&lt;br/&gt;&lt;br/&gt;¡Protege tu comida, desecha correctamente!</item>
+        <item>⚖️ &lt;b&gt;¡No es un favor, es LEY!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;En muchos lugares, la Logística Inversa obliga a farmacias y fabricantes a recibir tus medicamentos vencidos.&lt;br/&gt;&lt;br/&gt;No estás pidiendo un favor al llevar a la farmacia, estás ejerciendo tu ciudadanía. Carson te ayuda a encontrar quién cumple la ley.</item>
+        <item>🚰 &lt;b&gt;Jarabes, Colirios y Sprays&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;¡Nunca viertas el líquido en el fregadero para reciclar el vidrio! El líquido es el contaminante.&lt;br/&gt;&lt;br/&gt;✅ &lt;b&gt;La forma correcta:&lt;/b&gt; Lleva el frasco &lt;b&gt;con el líquido dentro&lt;/b&gt; al punto de recolección. Son incinerados en hornos especiales de alta temperatura.</item>
+        <item>❤️ &lt;b&gt;¿Sobró y aún es válido?&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Si el medicamento &lt;b&gt;NO&lt;/b&gt; venció y no lo vas a usar, ¡no lo deseches!&lt;br/&gt;&lt;br/&gt;Busca una \'Farmacia Solidaria\' u ONG en tu ciudad. Lo que es basura para ti puede salvar la vida de quien no tiene dinero para comprar.</item>
+    </string-array>
+
+    <string name="title_my_medications">Mis Medicamentos</string>
+    <string name="hint_search_med">Buscar medicamento...</string>
+    <string name="desc_add_med">Añadir Medicamento</string>
+
+    <string name="btn_dispose_action">¡Desechar!</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="label_name_prefix">Nombre:</string>
+    <string name="label_status_prefix">Estado:</string>
+    <string name="label_validity_prefix">Caducidad:</string>
+
+    <string name="desc_news_image">Imagen ilustrativa de la noticia</string>
+    <string name="label_read_more">Toca para leer más</string>
+
+    <string name="admin_panel_title">Panel de Administración</string>
+    <string name="admin_panel_subtitle">Visión general del sistema</string>
+    <string name="label_users_count">Usuarios</string>
+    <string name="label_disposals_count">Desechos</string>
+    <string name="btn_new_disposal_point">+ Nuevo Punto de Desecho</string>
+    <string name="label_current_map_points">Mapa de Puntos Actuales</string>
+    <string name="title_new_collection_point">Nuevo Punto de Recolección</string>
+    <string name="hint_place_name_example">Nombre del Lugar (Ej: Farmacia Central)</string>
+    <string name="hint_place_type">Tipo</string>
+    <string name="hint_complement_optional">Depto/Unidad (Opcional)</string>
+    <string name="btn_save_point">Guardar Punto</string>
+
+    <string name="title_notifications">Notificaciones</string>
+    <string name="desc_delete_notification">Eliminar notificación</string>
+    <string name="sample_notif_title">Título de la Notificación</string>
+    <string name="sample_notif_message">Este es un mensaje de ejemplo para probar el diseño.</string>
+
+    <string name="title_recover_password">Recuperar Contraseña</string>
+    <string name="text_recover_instructions">Ingresa el correo asociado a tu cuenta. Enviaremos un enlace para restablecer tu contraseña.</string>
+    <string name="hint_registered_email">Correo registrado</string>
+    <string name="btn_send_recovery_link">Enviar enlace de recuperación</string>
+
+    <string name="label_expiry_alerts">Alertas de Vencimiento</string>
+    <string name="label_dark_mode">Modo Oscuro</string>
+    <string name="label_language">Idioma</string>
+
+    <string name="title_your_profile">Tu Perfil</string>
+    <string name="desc_profile_logo">Logotipo del Perfil</string>
+    <string name="label_birth_date">Fecha de nacimiento</string>
+    <string name="label_gender">Género</string>
+    <string name="label_address_street">Dirección (Calle)</string>
+    <string name="hint_email_example">tu@email.com</string>
+    <string name="hint_cpf_format">000.000.000-00</string>
+    <string name="hint_your_street">Tu calle</string>
+    <string name="hint_your_city">Tu ciudad</string>
+    <string name="hint_your_neighborhood">Tu barrio</string>
+    <string name="hint_complement_example">Depto, unidad, etc.</string>
+    <string name="btn_save_changes">Guardar cambios</string>
+
+</resources>

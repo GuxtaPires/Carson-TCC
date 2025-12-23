@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carson</string>
+
+    <string name="welcome_title">Welcome to Carson!</string>
+    <string name="welcome_subtitle">Disposing of medication has never been so easy!</string>
+    <string name="start_button">Get Started!</string>
+
+    <string name="welcome_back">Welcome back!</string>
+    <string name="login_subtitle">Sign in to continue</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Log In</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="register_here">Sign up here</string>
+    <string name="chk_remember_me">Remember me</string>
+    <string name="loading_logging_in">Logging in...</string>
+
+    <string name="title_map_points">Disposal Points</string>
+    <string name="label_selected_address">Selected Address</string>
+    <string name="hint_tap_map">Tap a point on the map...</string>
+    <string name="desc_back">Go back</string>
+
+    <string name="title_news_header">News 🗞️</string>
+    <string name="text_last_update_placeholder">Last update: --/--/----</string>
+
+    <string name="desc_menu">Profile Menu</string>
+    <string name="desc_app_logo">App Logo</string>
+    <string name="desc_nav_map">Map</string>
+    <string name="desc_nav_meds">My Medications</string>
+    <string name="desc_nav_home">Home</string>
+    <string name="desc_nav_news">News</string>
+    <string name="desc_nav_search">Search</string>
+
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Log Out</string>
+
+    <string name="sexo_prompt">Select gender</string>
+    <string name="situacao_prompt">Select medication status</string>
+
+    <string-array name="situacoes_medicamento">
+        <item>In use</item>
+        <item>Expired</item>
+        <item>For disposal</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="idiomas">
+        <item>Portuguese (Brazil)</item>
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open menu</string>
+    <string name="navigation_drawer_close">Close menu</string>
+    <string name="titulo_home">Home</string>
+    <string name="titulo_medicamentos">Medications</string>
+    <string name="titulo_locais">Disposal Locations</string>
+    <string name="titulo_noticias">News</string>
+    <string name="titulo_sair">Exit</string>
+    <string name="titulo_configuracoes_area">Account</string>
+
+    <string name="desc_profile_photo">User profile photo</string>
+    <string name="loading_text">Loading...</string>
+    <string name="nav_header_email_placeholder">user@email.com</string>
+
+    <string name="title_create_account">Create Account</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_date">MM/DD/YYYY</string>
+    <string name="hint_cpf">National ID</string>
+    <string name="hint_zip_code">Zip Code</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_number">No.</string>
+    <string name="hint_city">City</string>
+    <string name="hint_state">State</string>
+    <string name="hint_neighborhood">Neighborhood</string>
+    <string name="hint_complement">Apt/Unit</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="btn_register">Sign Up</string>
+
+    <string-array name="generos_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Prefer not to say</item>
+    </string-array>
+
+    <string name="title_register_med">Register Medication</string>
+    <string name="label_med_name">Medication Name</string>
+    <string name="hint_med_name_example">e.g., Paracetamol</string>
+    <string name="label_med_validity">Expiration Date</string>
+    <string name="hint_expiry_date_format">MM/YYYY</string>
+    <string name="label_med_status">Status</string>
+    <string name="btn_save_med">Save Medication</string>
+
+    <string name="label_current_password">Current Password</string>
+    <string name="hint_current_password">Enter your current password</string>
+    <string name="label_new_password">New Password</string>
+    <string name="hint_new_password">Enter your new password</string>
+    <string name="label_confirm_new_password">Confirm New Password</string>
+    <string name="hint_confirm_new_password">Confirm the new password</string>
+    <string name="btn_save_password">Save New Password</string>
+
+    <string name="title_educational_guide">Educational Guide</string>
+    <string name="loading_tip">Loading tip...</string>
+    <string name="toast_tip_hint">Tap the text to see another tip! 💡</string>
+    <string name="snack_already_on_guide">You are already on the Educational Guide! 🎓</string>
+
+    <string-array name="dicas_titulos">
+        <item>🌊 The Water Cycle (and meds)</item>
+        <item>🥷 The Ninja Disposal Technique</item>
+        <item>🚫 The 3 Common Mistakes Game</item>
+        <item>💉 Needles and Syringes: Danger!</item>
+        <item>👶 The \'Home Pharmacy\' and Kids</item>
+        <item>💊 Packaging vs. Pill</item>
+        <item>🧪 Chemical Danger in Soil</item>
+        <item>🔄 Reverse Logistics: It\'s your right!</item>
+        <item>🧴 Liquids and Syrups: Don\'t pour it!</item>
+        <item>🤝 Conscious Donation</item>
+    </string-array>
+
+    <string-array name="dicas_conteudos">
+        <item>🐟 &lt;b&gt;Did you know fish are being medicated?&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;When you flush a pill down the toilet, sewage treatment does &lt;b&gt;NOT&lt;/b&gt; filter everything. Antibiotics go back to rivers, creating superbugs, and may even return to your tap.&lt;br/&gt;&lt;br/&gt;✅ &lt;b&gt;Solution:&lt;/b&gt; Never use the toilet as a trash can.</item>
+        <item>Follow the ninja protocol in 3 steps:&lt;br/&gt;&lt;br/&gt;📦 &lt;b&gt;1. The Box:&lt;/b&gt; Cardboard and leaflets go to &lt;b&gt;RECYCLING&lt;/b&gt; (shred your data first!).&lt;br/&gt;💊 &lt;b&gt;2. The Blister:&lt;/b&gt; The pack with pills goes to the &lt;b&gt;COLLECTION POINT&lt;/b&gt;.&lt;br/&gt;🗺️ &lt;b&gt;3. The Mission:&lt;/b&gt; Open the Carson map and find the nearest spot.</item>
+        <item>Do you make any of these mistakes?&lt;br/&gt;&lt;br/&gt;❌ &lt;b&gt;Mistake 1:&lt;/b&gt; Throwing in kitchen trash (leachate takes poison to the soil).&lt;br/&gt;❌ &lt;b&gt;Mistake 2:&lt;/b&gt; Burning in the backyard (smoke can be toxic).&lt;br/&gt;❌ &lt;b&gt;Mistake 3:&lt;/b&gt; Saving \'for later\' (expired medicine changes chemical formula).</item>
+        <item>⚠️ &lt;b&gt;Needles, syringes, and lancets do NOT go in regular trash!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;They can puncture trash bags and infect sanitation workers with serious diseases.&lt;br/&gt;&lt;br/&gt;✅ &lt;b&gt;How to do it:&lt;/b&gt; Store inside a PET bottle or laundry detergent jug (hard plastic), seal well, and take to a Health Unit.</item>
+        <item>🧸 &lt;b&gt;Looks like candy, but it\'s poison.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The leading cause of child poisoning is medication left within reach.&lt;br/&gt;&lt;br/&gt;💡 &lt;b&gt;Carson Tip:&lt;/b&gt; Do a monthly cleanup of your medicine cabinet. If it\'s expired or unused, dispose of it immediately at points on our map.</item>
+        <item>♻️ &lt;b&gt;The secret of separation:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Many people throw the entire box into the collection point. This wastes space!&lt;br/&gt;&lt;br/&gt;• &lt;b&gt;Cardboard/Paper:&lt;/b&gt; Blue Bin (Home recycling).&lt;br/&gt;• &lt;b&gt;Blister/Glass with meds:&lt;/b&gt; Collection Machine (Pharmacy).&lt;br/&gt;&lt;i&gt;Optimize space so everyone can dispose!&lt;/i&gt;</item>
+        <item>🌱 &lt;b&gt;Would you eat a tomato with painkillers?&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Meds in regular trash go to landfills. There, they dissolve into \'leachate\' and penetrate the earth, contaminating groundwater and surrounding crops.&lt;br/&gt;&lt;br/&gt;Protect your food, dispose correctly!</item>
+        <item>⚖️ &lt;b&gt;It\'s not a favor, it\'s LAW!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;In many places, Reverse Logistics requires pharmacies and manufacturers to take back your expired meds.&lt;br/&gt;&lt;br/&gt;You are not asking for a favor when taking it to the pharmacy, you are exercising your citizenship. Carson helps you find who complies.</item>
+        <item>🚰 &lt;b&gt;Syrups, Eye Drops, and Sprays&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Never pour the liquid down the sink to recycle the glass! The liquid is the pollutant.&lt;br/&gt;&lt;br/&gt;✅ &lt;b&gt;The right way:&lt;/b&gt; Take the bottle &lt;b&gt;with liquid inside&lt;/b&gt; to the collection point. They are incinerated in special high-temperature ovens.</item>
+        <item>❤️ &lt;b&gt;Leftover and still valid?&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;If the medicine has &lt;b&gt;NOT&lt;/b&gt; expired and you won\'t use it, don\'t dispose!&lt;br/&gt;&lt;br/&gt;Look for a \'Solidarity Pharmacy\' or NGO in your city. What is trash to you could save the life of someone who can\'t afford to buy it.</item>
+    </string-array>
+
+    <string name="title_my_medications">My Medications</string>
+    <string name="hint_search_med">Search medication...</string>
+    <string name="desc_add_med">Add Medication</string>
+
+    <string name="btn_dispose_action">Dispose!</string>
+    <string name="btn_delete">Delete</string>
+    <string name="label_name_prefix">Name:</string>
+    <string name="label_status_prefix">Status:</string>
+    <string name="label_validity_prefix">Expiration:</string>
+
+    <string name="desc_news_image">News illustration image</string>
+    <string name="label_read_more">Tap to read more</string>
+
+    <string name="admin_panel_title">Admin Panel</string>
+    <string name="admin_panel_subtitle">System overview</string>
+    <string name="label_users_count">Users</string>
+    <string name="label_disposals_count">Disposals</string>
+    <string name="btn_new_disposal_point">+ New Disposal Point</string>
+    <string name="label_current_map_points">Current Points Map</string>
+    <string name="title_new_collection_point">New Collection Point</string>
+    <string name="hint_place_name_example">Place Name (e.g. Central Pharmacy)</string>
+    <string name="hint_place_type">Type</string>
+    <string name="hint_complement_optional">Apt/Unit (Optional)</string>
+    <string name="btn_save_point">Save Point</string>
+
+    <string name="title_notifications">Notifications</string>
+    <string name="desc_delete_notification">Delete notification</string>
+    <string name="sample_notif_title">Notification Title</string>
+    <string name="sample_notif_message">This is a sample message to test the layout.</string>
+
+    <string name="title_recover_password">Recover Password</string>
+    <string name="text_recover_instructions">Enter the email associated with your account. We will send a link to reset your password.</string>
+    <string name="hint_registered_email">Registered email</string>
+    <string name="btn_send_recovery_link">Send recovery link</string>
+
+    <string name="label_expiry_alerts">Expiration Alerts</string>
+    <string name="label_dark_mode">Dark Mode</string>
+    <string name="label_language">Language</string>
+
+    <string name="title_your_profile">Your Profile</string>
+    <string name="desc_profile_logo">Profile Logo</string>
+    <string name="label_birth_date">Date of Birth</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_address_street">Address (Street)</string>
+    <string name="hint_email_example">you@email.com</string>
+    <string name="hint_cpf_format">000-00-0000</string>
+    <string name="hint_your_street">Your street</string>
+    <string name="hint_your_city">Your city</string>
+    <string name="hint_your_neighborhood">Your neighborhood</string>
+    <string name="hint_complement_example">Apt, Unit, etc.</string>
+    <string name="btn_save_changes">Save Changes</string>
+
+</resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/desc_back"
+            app:tint="?attr/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/imgProfileLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="@string/desc_profile_logo"/>
+
+        <TextView
+            android:id="@+id/txtProfileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/title_your_profile"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView style="@style/FormLabel" android:text="@string/hint_full_name" />
+        <EditText
+            style="@style/roundedField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/edtFullName"
+            android:hint="@string/hint_full_name"
+            android:textColorHint="?attr/colorOnSurface" />
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView style="@style/FormLabel" android:text="@string/label_birth_date" />
+                <EditText
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/edtBirthDate"
+                    android:inputType="date"
+                    android:hint="@string/hint_date"
+                    android:textColorHint="?attr/colorOnSurface"/>
+            </LinearLayout>
+
+            <View style="@style/FormSpacer" />
+
+            <LinearLayout style="@style/FormColumn">
+                <TextView style="@style/FormLabel" android:text="@string/email_hint" />
+                <EditText
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:textColorHint="?attr/colorOnSurface"
+                    android:id="@+id/edtEmail"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/hint_email_example" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView style="@style/FormLabel" android:text="@string/label_gender" />
+                <Spinner
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/spinnerGender"
+                    android:padding="0dp" />
+            </LinearLayout>
+
+            <View style="@style/FormSpacer" />
+
+            <LinearLayout style="@style/FormColumn">
+                <TextView style="@style/FormLabel" android:text="@string/hint_cpf" />
+                <EditText
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/edtCpf"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:hint="@string/hint_cpf_format"
+                    android:textColorHint="?attr/colorOnSurface"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView style="@style/FormLabel" android:text="@string/label_address_street" />
+        <EditText
+            style="@style/roundedField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPostalAddress"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="?attr/colorOnSurface"
+            android:id="@+id/edtAddress"
+            android:hint="@string/hint_your_street" />
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView style="@style/FormLabel" android:text="@string/hint_zip_code" />
+                <EditText
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/edtCep"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:hint="00000-000"
+                    android:textColorHint="?attr/colorOnSurface"/>
+            </LinearLayout>
+
+            <View style="@style/FormSpacer" />
+
+            <LinearLayout style="@style/FormColumnSmall">
+                <TextView style="@style/FormLabel" android:text="@string/hint_number" />
+                <EditText
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/edtNumber"
+                    android:inputType="number"
+                    android:hint="123"
+                    android:textColorHint="?attr/colorOnSurface"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView style="@style/FormLabel" android:text="@string/hint_city" />
+                <EditText
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textCapWords"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/edtCity"
+                    android:hint="@string/hint_your_city"
+                    android:textColorHint="?attr/colorOnSurface" />
+            </LinearLayout>
+
+            <View style="@style/FormSpacer" />
+
+            <LinearLayout style="@style/FormColumnSmall">
+                <TextView style="@style/FormLabel" android:text="@string/hint_state" />
+                <EditText
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textCapCharacters"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/edtState"
+                    android:maxLength="2"
+                    android:hint="UF"
+                    android:textColorHint="?attr/colorOnSurface"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/FormRow">
+            <LinearLayout style="@style/FormColumn">
+                <TextView style="@style/FormLabel" android:text="@string/hint_neighborhood" />
+                <EditText
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textCapWords"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/edtNeighborhood"
+                    android:hint="@string/hint_your_neighborhood"
+                    android:textColorHint="?attr/colorOnSurface" />
+            </LinearLayout>
+
+            <View style="@style/FormSpacer" />
+
+            <LinearLayout style="@style/FormColumn">
+                <TextView style="@style/FormLabel" android:text="@string/hint_complement" />
+                <EditText
+                    style="@style/roundedField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textCapSentences"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/edtComplement"
+                    android:hint="@string/hint_complement_example"
+                    android:textColorHint="?attr/colorOnSurface" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="@string/btn_save_changes"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

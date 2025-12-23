@@ -3,4 +3,18 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="icon_tint_positive">#2B7A2B</color>
+
+    <!-- Cores Padrão Carson -->
+    <color name="carson_verde_escuro">#1A5E1A</color>
+    <color name="carson_verde_claro">#16A34A</color>
+    <color name="carson_verde_suave">#E8F5E9</color>
+
+    <!-- Novas Cores para o Tema Escuro -->
+    <color name="carson_dark_background">#121A12</color>
+    <color name="carson_dark_surface">#1A2C1D</color>
+    <color name="carson_dark_on_surface">#E0E0E0</color>
+
+    <!-- Outras cores -->
+    <color name="cinza_escuro">#444444</color>
+    <color name="vermelho_alerta">#D32F2F</color>
 </resources>

@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="160dp"
-    android:background="#C6F4D6"
+    android:layout_height="176dp"
+    android:background="?attr/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center_vertical">
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imgHeaderPhoto"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:contentDescription="@string/desc_profile_photo"
+        android:src="@drawable/ic_profile"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
 
     <TextView
-        android:id="@+id/txtOla"
+        android:id="@+id/txtHeaderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_text"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtHeaderEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Olá, João Pedro"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#000000" />
+        android:text="@string/nav_header_email_placeholder"
+        android:textColor="?attr/colorOnPrimary"
+        android:alpha="0.8"
+        android:textSize="14sp" />
 </LinearLayout>

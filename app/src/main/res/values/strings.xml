@@ -1,11 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Carson - Um aplicativo para descarte de medicamentos</string>
+    <string name="app_name">Carson</string>
+    <string name="news_api_key" translatable="false">91d1aa7f35a14351bc83fd71c7693639</string>
+
+    <string name="welcome_title">Bem-vindo ao Carson!</string>
+    <string name="welcome_subtitle">Descartar medicamentos nunca foi tão fácil!</string>
+    <string name="start_button">Começar!</string>
+
+    <string name="welcome_back">Bem-vindo de volta!</string>
+    <string name="login_subtitle">Acesse sua conta para continuar</string>
+    <string name="email_hint">E-mail</string>
+    <string name="password_hint">Senha</string>
+    <string name="login_button">Entrar</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="no_account">Não tem uma conta?</string>
+    <string name="register_here">Cadastre-se aqui</string>
+    <string name="chk_remember_me">Lembre de mim</string>
+    <string name="loading_logging_in">Entrando...</string>
+
+    <string name="title_map_points">Pontos de descarte</string>
+    <string name="label_selected_address">Endereço selecionado</string>
+    <string name="hint_tap_map">Toque um ponto no mapa...</string>
+    <string name="desc_back">Voltar</string>
+
+    <string name="title_news_header">Notícias 🗞️</string>
+    <string name="text_last_update_placeholder">Última atualização: --/--/----</string>
+
+    <string name="desc_menu">Menu de perfil</string>
+    <string name="desc_app_logo">Logo do aplicativo</string>
+    <string name="desc_nav_map">Mapa</string>
+    <string name="desc_nav_meds">Meus Medicamentos</string>
+    <string name="desc_nav_home">Início</string>
+    <string name="desc_nav_news">Notícias</string>
+    <string name="desc_nav_search">Buscar</string>
+
+    <string name="profile">Perfil</string>
+    <string name="settings">Configurações</string>
+    <string name="change_password">Alterar senha</string>
+    <string name="logout">Sair</string>
 
     <string name="sexo_prompt">Selecione o gênero</string>
+    <string name="situacao_prompt">Selecione a situação do medicamento</string>
 
-    <string-array name="languages_array">
-        <item>Português - BR</item>
-        <item>English - US</item>
-        <item>Español - ES</item>
+    <string-array name="situacoes_medicamento">
+        <item>Em uso</item>
+        <item>Vencido</item>
+        <item>Para descarte</item>
+        <item>Outro</item>
     </string-array>
+
+    <string-array name="idiomas">
+        <item>Português (Brasil)</item>
+        <item>Inglês</item>
+        <item>Espanhol</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Fechar menu</string>
+    <string name="titulo_home">Início</string>
+    <string name="titulo_medicamentos">Medicamentos</string>
+    <string name="titulo_locais">Locais de Descarte</string>
+    <string name="titulo_noticias">Notícias</string>
+    <string name="titulo_sair">Sair</string>
+    <string name="titulo_configuracoes_area">Conta</string>
+
+    <string name="desc_profile_photo">Foto de perfil do usuário</string>
+    <string name="loading_text">Carregando...</string>
+    <string name="nav_header_email_placeholder">usuario@email.com</string>
+
+    <string name="title_create_account">Criar Conta</string>
+    <string name="hint_full_name">Nome completo</string>
+    <string name="hint_date">DD/MM/AAAA</string>
+    <string name="hint_cpf">CPF</string>
+    <string name="hint_zip_code">CEP</string>
+    <string name="hint_address">Endereço</string>
+    <string name="hint_number">Nº</string>
+    <string name="hint_city">Cidade</string>
+    <string name="hint_state">UF</string>
+    <string name="hint_neighborhood">Bairro</string>
+    <string name="hint_complement">Complemento</string>
+    <string name="hint_confirm_password">Confirme a senha</string>
+    <string name="btn_register">Cadastrar</string>
+
+    <string-array name="generos_array">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Outro</item>
+        <item>Prefiro não dizer</item>
+    </string-array>
+
+    <string name="title_register_med">Cadastrar Medicamento</string>
+    <string name="label_med_name">Nome do Medicamento</string>
+    <string name="hint_med_name_example">Ex: Paracetamol</string>
+    <string name="label_med_validity">Validade</string>
+    <string name="hint_expiry_date_format">MM/AAAA</string>
+    <string name="label_med_status">Situação</string>
+    <string name="btn_save_med">Salvar Medicamento</string>
+
+    <string name="label_current_password">Senha atual</string>
+    <string name="hint_current_password">Digite sua senha atual</string>
+    <string name="label_new_password">Nova senha</string>
+    <string name="hint_new_password">Digite sua nova senha</string>
+    <string name="label_confirm_new_password">Confirmar nova senha</string>
+    <string name="hint_confirm_new_password">Confirme a nova senha</string>
+    <string name="btn_save_password">Salvar nova senha</string>
+
+    <string name="title_educational_guide">Guia educativo</string>
+    <string name="loading_tip">Carregando dica...</string>
+    <string name="toast_tip_hint">Toque no texto para ver outra dica! 💡</string>
+    <string name="snack_already_on_guide">Você já está no Guia Educativo! 🎓</string>
+
+    <string-array name="dicas_titulos">
+        <item>🌊 O Ciclo da Água (e do remédio)</item>
+        <item>🥷 A Técnica do Descarte Ninja</item>
+        <item>🚫 O Jogo dos 3 Erros Comuns</item>
+        <item>💉 Agulhas e Seringas: Perigo!</item>
+        <item>👶 A Farmacinha e as Crianças</item>
+        <item>💊 Embalagem vs. Comprimido</item>
+        <item>🧪 O Perigo da Química no Solo</item>
+        <item>🔄 Logística Reversa: É seu direito!</item>
+        <item>🧴 Líquidos e Xaropes: Não vire na pia!</item>
+        <item>🤝 Doação Consciente</item>
+    </string-array>
+
+    <string-array name="dicas_conteudos">
+        <item>🐟 &lt;b&gt;Você sabia que os peixes estão sendo medicados?&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Quando você joga um comprimido na privada, o tratamento de esgoto &lt;b&gt;NÃO&lt;/b&gt; filtra tudo. O antibiótico volta para os rios, cria superbactérias e pode até voltar para sua torneira.&lt;br/&gt;&lt;br/&gt;✅ &lt;b&gt;Solução:&lt;/b&gt; Nunca use o vaso sanitário como lixeira.</item>
+        <item>Siga o protocolo ninja em 3 passos:&lt;br/&gt;&lt;br/&gt;📦 &lt;b&gt;1. A Caixa:&lt;/b&gt; Papelão e bula vão para a &lt;b&gt;RECICLAGEM&lt;/b&gt; (rasgue seus dados antes!).&lt;br/&gt;💊 &lt;b&gt;2. O Blister:&lt;/b&gt; A cartela com os comprimidos vai para o &lt;b&gt;PONTO DE COLETA&lt;/b&gt;.&lt;br/&gt;🗺️ &lt;b&gt;3. A Missão:&lt;/b&gt; Abra o mapa do Carson e encontre o posto mais próximo.</item>
+        <item>Você comete algum desses erros?&lt;br/&gt;&lt;br/&gt;❌ &lt;b&gt;Erro 1:&lt;/b&gt; Jogar no lixo da cozinha (o chorume leva o veneno pro solo).&lt;br/&gt;❌ &lt;b&gt;Erro 2:&lt;/b&gt; Queimar no quintal (a fumaça pode ser tóxica).&lt;br/&gt;❌ &lt;b&gt;Erro 3:&lt;/b&gt; Guardar \'pra depois\' (remédio vencido muda a fórmula química).</item>
+        <item>⚠️ &lt;b&gt;Agulhas, seringas e lancetas NÃO vão no lixo comum!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Elas podem furar o saco de lixo e contaminar os garis com doenças graves.&lt;br/&gt;&lt;br/&gt;✅ &lt;b&gt;Como fazer:&lt;/b&gt; Guarde dentro de uma garrafa PET ou embalagem de amaciante (plástico duro), feche bem e leve a uma UBS.</item>
+        <item>🧸 &lt;b&gt;Parece bala, mas é veneno.&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;A principal causa de intoxicação infantil no Brasil são medicamentos deixados ao alcance.&lt;br/&gt;&lt;br/&gt;💡 &lt;b&gt;Dica Carson:&lt;/b&gt; Faça uma limpa mensal na sua caixa de remédios. Se venceu ou não usa mais, descarte imediatamente nos pontos do nosso mapa.</item>
+        <item>♻️ &lt;b&gt;O segredo da separação:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Muitas pessoas jogam a caixa inteira no ponto de coleta. Isso ocupa espaço à toa!&lt;br/&gt;&lt;br/&gt;• &lt;b&gt;Papelão/Papel:&lt;/b&gt; Lixeira Azul (Reciclagem de casa).&lt;br/&gt;• &lt;b&gt;Cartela/Vidro com remédio:&lt;/b&gt; Máquina coletora (Farmácia).&lt;br/&gt;&lt;i&gt;Otimize o espaço para caber o descarte de todos!&lt;/i&gt;</item>
+        <item>🌱 &lt;b&gt;Você comeria um tomate com analgésico?&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Remédios no lixo comum vão para aterros sanitários. Lá, eles se dissolvem no \'chorume\' e penetram na terra, contaminando o lençol freático e as plantações ao redor.&lt;br/&gt;&lt;br/&gt;Proteja sua comida, descarte certo!</item>
+        <item>⚖️ &lt;b&gt;Não é favor, é LEI!&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;No Brasil, a Logística Reversa obriga farmácias e fabricantes a receberem seus medicamentos vencidos.&lt;br/&gt;&lt;br/&gt;Você não está pedindo um favor ao levar na farmácia, você está exercendo sua cidadania. O Carson te ajuda a achar quem cumpre a lei.</item>
+        <item>🚰 &lt;b&gt;Xaropes, Colírios e Sprays&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Nunca despeje o líquido na pia para reciclar o vidro! O líquido é o poluente.&lt;br/&gt;&lt;br/&gt;✅ &lt;b&gt;O jeito certo:&lt;/b&gt; Leve o frasco &lt;b&gt;com o líquido dentro&lt;/b&gt; até o ponto de coleta. Eles são incinerados em fornos especiais de alta temperatura.</item>
+        <item>❤️ &lt;b&gt;Sobrou e ainda está na validade?&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Se o remédio &lt;b&gt;NÃO&lt;/b&gt; venceu e você não vai usar, não descarte!&lt;br/&gt;&lt;br/&gt;Procure uma \'Farmácia Solidária\' ou ONG na sua cidade. O que é lixo para você pode salvar a vida de quem não tem dinheiro para comprar.</item>
+    </string-array>
+
+    <string name="title_my_medications">Meus Medicamentos</string>
+    <string name="hint_search_med">Buscar medicamento...</string>
+    <string name="desc_add_med">Adicionar Medicamento</string>
+
+    <string name="btn_dispose_action">Descarte!</string>
+    <string name="btn_delete">Excluir</string>
+    <string name="label_name_prefix">Nome:</string>
+    <string name="label_status_prefix">Situação:</string>
+    <string name="label_validity_prefix">Validade:</string>
+
+    <string name="desc_news_image">Imagem ilustrativa da notícia</string>
+    <string name="label_read_more">Toque para ler mais</string>
+
+    <string name="admin_panel_title">Painel Admin</string>
+    <string name="admin_panel_subtitle">Visão geral do sistema</string>
+    <string name="label_users_count">Usuários</string>
+    <string name="label_disposals_count">Descartes</string>
+    <string name="btn_new_disposal_point">+ Novo Ponto de Descarte</string>
+    <string name="label_current_map_points">Mapa de Pontos Atuais</string>
+    <string name="title_new_collection_point">Novo Ponto de Coleta</string>
+    <string name="hint_place_name_example">Nome do Local (Ex: Farmácia Central)</string>
+    <string name="hint_place_type">Tipo</string>
+    <string name="hint_complement_optional">Complemento (Opcional)</string>
+    <string name="btn_save_point">Salvar Ponto</string>
+
+    <string name="title_notifications">Notificações</string>
+    <string name="desc_delete_notification">Excluir notificação</string>
+    <string name="sample_notif_title">Título da Notificação</string>
+    <string name="sample_notif_message">Esta é uma mensagem de exemplo para testar o layout.</string>
+
+    <string name="title_recover_password">Recuperar Senha</string>
+    <string name="text_recover_instructions">Insira o e-mail associado à sua conta. Enviaremos um link para redefinir sua senha.</string>
+    <string name="hint_registered_email">E-mail cadastrado</string>
+    <string name="btn_send_recovery_link">Enviar link de recuperação</string>
+
+    <string name="label_expiry_alerts">Alertas de Vencimento</string>
+    <string name="label_dark_mode">Tema Escuro</string>
+    <string name="label_language">Idioma</string>
+
+    <string name="title_your_profile">Seu Perfil</string>
+    <string name="desc_profile_logo">Logo do Perfil</string>
+    <string name="label_birth_date">Data de nascimento</string>
+    <string name="label_gender">Gênero</string>
+    <string name="label_address_street">Endereço (Rua)</string>
+    <string name="hint_email_example">seu@email.com</string>
+    <string name="hint_cpf_format">000.000.000-00</string>
+    <string name="hint_your_street">Sua rua</string>
+    <string name="hint_your_city">Sua cidade</string>
+    <string name="hint_your_neighborhood">Seu bairro</string>
+    <string name="hint_complement_example">Apto, bloco, etc.</string>
+    <string name="btn_save_changes">Salvar alterações</string>
+
 </resources>

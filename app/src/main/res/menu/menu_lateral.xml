@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/nav_perfil"
-        android:title="Seu perfil"
-        android:icon="@drawable/ic_profile" />
 
-    <item
-        android:id="@+id/nav_config"
-        android:title="Configurações"
-        android:icon="@drawable/ic_settings" />
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:title="@string/profile"
+            android:icon="@drawable/ic_profile" />
+
+        <item
+            android:id="@+id/nav_change_password"
+            android:title="@string/change_password"
+            android:icon="@drawable/ic_password" />
+
+        <item
+            android:id="@+id/nav_config"
+            android:title="@string/settings"
+            android:icon="@drawable/ic_settings" />
+
+    </group>
 
     <item
         android:id="@+id/nav_logout"
-        android:title="Deslogar"
+        android:title="@string/logout"
         android:icon="@drawable/ic_logout"
         android:titleTextColor="#D32F2F" />
+
 </menu>

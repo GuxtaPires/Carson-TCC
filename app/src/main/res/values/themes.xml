@@ -1,9 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.CarsonUmAplicativoParaDescarteDeMedicamentos" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Base.Theme.CarsonUmAplicativoParaDescarteDeMedicamentos"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Light Mode -->
+        <item name="colorPrimary">@color/carson_verde_claro</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/white</item> <!-- Cor de Cards, Menus, etc. -->
+        <item name="android:colorBackground">@color/carson_verde_suave</item> <!-- Cor de fundo principal -->
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorError">#B00020</item>
+        <item name="colorOnError">@color/white</item>
+
     </style>
 
-    <style name="Theme.CarsonUmAplicativoParaDescarteDeMedicamentos" parent="Base.Theme.CarsonUmAplicativoParaDescarteDeMedicamentos" />
+    <style name="Theme.CarsonUmAplicativoParaDescarteDeMedicamentos"
+        parent="Base.Theme.CarsonUmAplicativoParaDescarteDeMedicamentos" />
+
 </resources>

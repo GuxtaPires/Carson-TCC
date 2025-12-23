@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="home"
+        android:icon="@android:drawable/ic_menu_view" />
+    <item
+        android:id="@+id/menu_medicamentos"
+        android:title="medicamentos"
+        android:icon="@android:drawable/ic_menu_info_details" />
+    <item
+        android:id="@+id/menu_locais"
+        android:title="locais"
+        android:icon="@android:drawable/ic_menu_compass" />
+    <item
+        android:id="@+id/menu_noticias"
+        android:title="noticias"
+        android:icon="@android:drawable/ic_menu_recent_history" />
+    <item
+        android:id="@+id/menu_sair"
+        android:title="sair"
+        android:icon="@android:drawable/ic_lock_power_off" />
+</menu>
